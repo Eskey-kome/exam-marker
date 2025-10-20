@@ -1,0 +1,30 @@
+SAMPLE CHEMISTRY EXAMINATION (TOTAL: 20 MARKS)
+
+Course: Chemistry
+Duration: 30 minutes
+Instructions: Answer all questions clearly and concisely.
+
+SECTION A: Short Answer (10 Marks)
+
+1. Define an acid according to the Brønsted-Lowry theory. (2 marks)
+2. State one difference between a physical and a chemical change. (2 marks)
+3. Write the chemical formula for calcium carbonate. (1 mark)
+4. What is the atomic number of oxygen? (1 mark)
+5. State two factors that affect the rate of a chemical reaction. (4 marks)
+
+SECTION B: Structured Questions (10 Marks)
+
+6. A compound has the molecular formula C₂H₆O.
+   (a) Identify the compound. (1 mark)
+   (b) State one possible use of this compound. (1 mark)
+
+7. Calculate the molar mass of sodium hydroxide (NaOH). (2 marks)
+
+8. Describe briefly what happens when magnesium reacts with hydrochloric acid. (2 marks)
+
+9. The pH of a solution is 2.
+   (a) Is the solution acidic or basic? (1 mark)
+   (b) What color will blue litmus paper turn in this solution? (1 mark)
+
+10. Balance the following chemical equation:
+    Fe + HCl → FeCl₂ + H₂ (2 marks)

@@ -1,0 +1,15 @@
+| Qn        | Correct Answer                                                                                     | Marks  |
+| --------- | -------------------------------------------------------------------------------------------------- | ------ |
+| 1         | An acid is a substance that donates a proton (H⁺ ion) in a reaction.                               | 2      |
+| 2         | Physical change does not form a new substance, while chemical change does.                         | 2      |
+| 3         | CaCO₃                                                                                              | 1      |
+| 4         | 8                                                                                                  | 1      |
+| 5         | Temperature, concentration, surface area, catalyst (any two)                                       | 4      |
+| 6(a)      | Ethanol (or ethyl alcohol)                                                                         | 1      |
+| 6(b)      | Used as a solvent / fuel / in alcoholic beverages                                                  | 1      |
+| 7         | Na (23) + O (16) + H (1) = **40 g/mol**                                                            | 2      |
+| 8         | Magnesium reacts with HCl to produce hydrogen gas and magnesium chloride (Mg + 2HCl → MgCl₂ + H₂). | 2      |
+| 9(a)      | Acidic                                                                                             | 1      |
+| 9(b)      | Red                                                                                                | 1      |
+| 10        | Fe + **2HCl → FeCl₂ + H₂**                                                                         | 2      |
+|TOTAL |                                                                                                    | 20 |
