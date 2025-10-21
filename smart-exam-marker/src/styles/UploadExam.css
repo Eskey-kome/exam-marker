@@ -1,0 +1,134 @@
+/* ==============================
+   UPLOAD PAGES STYLING
+   ============================== */
+
+.upload-page {
+  margin-left: 240px;
+  padding: 3rem;
+  min-height: 100vh;
+  background: var(--background);
+  font-family: "Poppins", sans-serif;
+  color: var(--text);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.upload-page h1 {
+  color: var(--primary);
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.page-desc {
+  color: #64748b;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+/* Upload container */
+.upload-container {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.upload-container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.08);
+}
+
+.upload-title {
+  font-size: 1.3rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+/* Drag-drop area */
+.upload-box {
+  position: relative;
+  border: 2px dashed var(--primary);
+  border-radius: 14px;
+  padding: 2rem;
+  background: #f1f5f9;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.upload-box p {
+  color: #475569;
+  font-size: 1rem;
+}
+
+.upload-box input[type="file"] {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.upload-box.dragover {
+  background: #e0f2fe;
+  border-color: var(--secondary);
+}
+
+/* File info + progress */
+.file-info {
+  margin-top: 1.5rem;
+  text-align: left;
+}
+
+.file-info p {
+  font-weight: 500;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: var(--secondary);
+  transition: width 0.3s ease;
+}
+
+.success-msg {
+  color: var(--secondary);
+  font-size: 0.9rem;
+  margin-top: 0.4rem;
+  display: block;
+  font-weight: 500;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 950px) {
+  .upload-page {
+    margin-left: 0;
+    padding: 2rem 1rem;
+  }
+  .upload-container {
+    width: 100%;
+  }
+}

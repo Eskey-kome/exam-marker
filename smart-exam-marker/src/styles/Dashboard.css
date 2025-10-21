@@ -1,0 +1,265 @@
+/* src/styles/Dashboard.css */
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.sidebar-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sidebar-logo {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  color: #000;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  padding: 0.7rem 0;
+  font-size: 16px;
+  color: #000;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.sidebar nav ul li:hover {
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+/* Main Dashboard Content */
+.dashboard-main {
+  flex: 1;
+  padding: 1rem 2rem;
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.banner-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.banner-text {
+  position: absolute;
+  top: 30%;
+  left: 2%;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.banner-text h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.banner-text p {
+  margin: 0.3rem 0 0;
+  font-size: 18px;
+}
+
+/* Upload Grid */
+.upload-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Upload Box */
+.upload-box {
+  background-color: #fff;
+  border: 1px dashed #aaa;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.upload-box:hover {
+  transform: translateY(-3px);
+}
+
+.upload-box img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 0.7rem;
+}
+
+.upload-box h3 {
+  margin: 0.5rem 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.upload-box p {
+  font-size: 14px;
+  margin-top: 0.5rem;
+  color: #555;
+}
+
+/* Student Input */
+.student-label {
+  display: block;
+  margin-bottom: 0.8rem;
+  font-size: 14px;
+  color: #333;
+  text-align: left;
+}
+
+.student-input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.3rem;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+/* Drag & Drop Area */
+.drag-drop-area {
+  border: 1px dashed #aaa;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  position: relative;
+  cursor: pointer;
+  background-color: #fafafa;
+}
+
+.drag-drop-area p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.drag-drop-area input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Action Buttons */
+.action-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 0.7rem 1.2rem;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-secondary {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #1e7e34;
+}
+
+/* Status Message */
+.status-message {
+  font-size: 14px;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Results Section */
+.results-section {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.results-section h2 {
+  margin-top: 0;
+}
+
+.results-section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.results-section th, .results-section td {
+  padding: 0.7rem 0.5rem;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.results-section th {
+  background-color: #f5f5f5;
+}
+.btn-report {
+  background-color: #1f7a1f;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-report:hover {
+  background-color: #145a14;
+}

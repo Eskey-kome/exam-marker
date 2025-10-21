@@ -1,0 +1,82 @@
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  background: var(--card-bg);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.sidebar-logo h2 {
+  color: var(--primary);
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.sidebar-logo span {
+  color: var(--secondary);
+}
+
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sidebar-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.sidebar-links a:hover {
+  background: #f1f5f9;
+  color: var(--primary);
+}
+
+.logout-btn {
+  margin-top: 2rem;
+  background: var(--secondary);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.7rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.logout-btn:hover {
+  background: #0f9d7a;
+}
+
+/* Responsive */
+@media (max-width: 950px) {
+  .sidebar {
+    position: static;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+  }
+
+  .sidebar-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .logout-btn {
+    margin: 0;
+  }
+}

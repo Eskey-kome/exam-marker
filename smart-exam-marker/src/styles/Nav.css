@@ -1,0 +1,155 @@
+:root {
+  --primary: #2563eb;
+  --secondary: #10b981;
+  --background: #f8fafc;
+  --text: #1e293b;
+  --card-bg: #ffffff;
+  --border: #e2e8f0;
+}
+
+/* ------------------ NAVBAR ------------------ */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--card-bg);
+  padding: 1rem 8%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  cursor: pointer;
+  user-select: none;
+}
+
+.nav-logo span {
+  color: var(--secondary);
+}
+
+/* ------------- NAV LINKS ------------- */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+/* ------------- BUTTONS ------------- */
+.btn-primary,
+.btn-outline {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: var(--secondary);
+}
+
+.btn-outline {
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  background: white;
+}
+
+.btn-outline:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.logout-btn {
+  cursor: pointer;
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+}
+
+.logout-btn:hover {
+  background: var(--secondary);
+  color: white;
+}
+
+/* ------------- HAMBURGER MENU ------------- */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 200;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: var(--text);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Toggle animation */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+/* ------------- MOBILE VIEW ------------- */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: var(--card-bg);
+    flex-direction: column;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    border-top: 1px solid var(--border);
+    text-align: center;
+  }
+
+  .nav-links.active {
+    max-height: 400px;
+    padding: 1rem 0;
+  }
+
+  .nav-links a,
+  .btn-primary,
+  .btn-outline {
+    display: block;
+    width: 80%;
+    margin: 0.5rem auto;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

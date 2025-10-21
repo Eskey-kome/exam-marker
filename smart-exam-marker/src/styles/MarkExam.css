@@ -1,0 +1,125 @@
+/* src/styles/MarkExam.css */
+
+/* Layout */
+.markexam-container {
+  max-width: 900px;
+  margin: 2rem auto;
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.markexam-container h1 {
+  text-align: center;
+  color: var(--primary);
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  text-align: center;
+  color: var(--text);
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.markexam-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid var(--border);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.markexam-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+}
+
+.btn-primary {
+  background: var(--secondary);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #0ea36d;
+}
+
+.alert {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.alert.error {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+/* Results Table */
+.results-section {
+  margin-top: 2rem;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.results-table th, .results-table td {
+  padding: 0.75rem;
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+
+.results-table th {
+  background: var(--primary);
+  color: white;
+}
+
+.results-table tr:hover {
+  background: #f1f5f9;
+}
+
+/* Info Section */
+.info-section {
+  margin-top: 2rem;
+  background: #f8fafc;
+  border: 1px solid var(--border);
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.info-section h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.info-section ol {
+  padding-left: 1.5rem;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

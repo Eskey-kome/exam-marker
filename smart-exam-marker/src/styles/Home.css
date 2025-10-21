@@ -1,0 +1,136 @@
+/* ---------- HOME PAGE ---------- */
+.home-container {
+  font-family: "Poppins", sans-serif;
+  color: #222;
+}
+
+/* HERO SECTION */
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 8%;
+  flex-wrap: wrap;
+  background: linear-gradient(to right, #f9fafc, #eef3ff);
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 550px;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text span {
+  color: #1e40af;
+}
+
+.hero-text p {
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.hero-buttons .btn-primary,
+.hero-buttons .btn-outline {
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: #1e40af;
+  color: white;
+  border: none;
+}
+
+.btn-outline {
+  border: 2px solid #1e40af;
+  color: #1e40af;
+  background: transparent;
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* FEATURES SECTION */
+.features-section {
+  padding: 4rem 8%;
+  background: #fff;
+  text-align: center;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  background: #f8f9fb;
+  padding: 2rem;
+  border-radius: 12px;
+  transition: 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  background: #f0f4ff;
+}
+
+.feature-card img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* CTA SECTION */
+.cta-section {
+  padding: 4rem 8%;
+  background: #1e40af;
+  color: white;
+  text-align: center;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta-section .btn-primary {
+  background: white;
+  color: #1e40af;
+  border: none;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-text, .hero-image {
+    width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+}

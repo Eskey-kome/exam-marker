@@ -1,0 +1,111 @@
+/* ==============================
+   PROFILE PAGE
+   ============================== */
+.profile-page {
+  margin-left: 240px;
+  padding: 3rem;
+  background: var(--background);
+  min-height: 100vh;
+  animation: fadeIn 0.5s ease;
+}
+
+.profile-page h1 {
+  color: var(--primary);
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.profile-card {
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  max-width: 800px;
+  margin: auto;
+}
+
+.profile-avatar {
+  flex: 1;
+  text-align: center;
+}
+
+.profile-avatar img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary);
+  margin-bottom: 1rem;
+}
+
+.profile-avatar input[type="file"] {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.profile-info {
+  flex: 2;
+}
+
+.profile-info label {
+  display: block;
+  margin-bottom: 1rem;
+  color: var(--text);
+  font-weight: 500;
+}
+
+.profile-info input {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-top: 0.3rem;
+  font-size: 0.95rem;
+  background: #f9fafb;
+}
+
+.profile-actions {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.btn-primary,
+.btn-outline {
+  padding: 0.7rem 1.4rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.btn-primary {
+  background: var(--secondary);
+  color: white;
+  border: none;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+}
+
+.btn-primary:hover {
+  transform: scale(1.03);
+  background: #059669;
+}
+
+.btn-outline:hover {
+  background: var(--secondary);
+  color: white;
+}
+
+@media (max-width: 850px) {
+  .profile-card {
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+}

@@ -1,0 +1,48 @@
+/* ---------- SERVICES PAGE ---------- */
+.services-page {
+  font-family: "Poppins", sans-serif;
+  padding: 3rem 8%;
+  text-align: center;
+  color: #222;
+}
+
+.services-page h1 {
+  color: #1e40af;
+  font-size: 2.4rem;
+}
+
+.services-intro {
+  margin: 1rem auto 3rem;
+  max-width: 600px;
+  color: #555;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.service-card {
+  background: #f8f9fb;
+  border-radius: 12px;
+  padding: 2rem;
+  transition: 0.3s ease;
+}
+
+.service-card:hover {
+  background: #f0f4ff;
+  transform: translateY(-6px);
+}
+
+.service-card img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  color: #1e40af;
+  margin-bottom: 0.5rem;
+}
